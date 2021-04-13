@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  margin: auto;
+  margin-top: 10vh;
+  width: 75vw;
+  height: 80vh;
+  box-shadow: 0 0 5vh pink;
+  align-items: center;
+}
+header {
+  font-size: xx-large;
+  font-weight: 900;
+  text-align: center;
+}
+.count {
+  font-size: larger;
+  text-align: center;
+}
+.tally {
+  font-size: large;
+}
