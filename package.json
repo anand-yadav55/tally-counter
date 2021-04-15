@@ -1,11 +1,26 @@
 {
   "name": "tally-counter",
   "version": "1.0.0",
-  "description": "",
+  "description": "It is a local browser storage based count calculator that simulates a tally counting mechanism.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Anand Yadav",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anand-yadav55/tally-counter.git"
+  },
+  "keywords": [
+    "tally",
+    "counter"
+  ],
+  "bugs": {
+    "url": "https://github.com/anand-yadav55/tally-counter/issues"
+  },
+  "homepage": "https://github.com/anand-yadav55/tally-counter#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
