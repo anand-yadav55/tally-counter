@@ -10,6 +10,7 @@ if (typeof Storage !== "undefined") {
     counter = Number(localStorage.getItem("countForTallyCounter"));
   }
   count.innerText = counter;
+  tallyMaker(counter);
 
   function tallyMaker(counter) {
     let noOfCircles = counter / 5;

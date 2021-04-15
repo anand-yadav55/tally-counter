@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-wrap: break-word;
+  line-height: 3rem;
 }
 .container {
   margin: auto;
@@ -16,10 +18,37 @@ header {
   font-weight: 900;
   text-align: center;
 }
+.count-container {
+  margin: auto;
+  width: fit-content;
+  font-size: larger;
+}
 .count {
   font-size: larger;
   text-align: center;
+  margin: auto;
 }
 .tally {
   font-size: large;
+  letter-spacing: 1rem;
+  max-width: 70%;
+  min-width: 30%;
+  width: fit-content;
+  margin: auto;
+  height: 50vh;
+  overflow-y: scroll;
+}
+
+.add {
+  border: 0.01rem solid rgb(26, 143, 79);
+  border-radius: 2rem;
+  padding: 0.4rem 1rem;
+  background-color: rgb(120, 179, 255);
+  margin: auto;
+  display: block;
+  box-shadow: 2px 2px 1px black;
+  line-height: normal;
+}
+.add:active {
+  box-shadow: none;
 }
