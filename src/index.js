@@ -24,7 +24,7 @@ if (typeof Storage !== "undefined") {
     const tally = document.getElementsByClassName("tally")[0];
     tally.innerText = "";
     for (let i = 1; i <= noOfCircles; ++i) {
-      tally.innerText += 0;
+      tally.innerText += "O";
     }
     for (let i = 1; i <= noOfLines; ++i) {
       tally.innerText += "|";
@@ -49,6 +49,9 @@ if (typeof Storage !== "undefined") {
     tallyMaker(counter);
   });
   resetButton.addEventListener("click", () => {
+    if (!confirm("are you sure you want to RESET the counter?")) {
+      return;
+    }
     counter = 0;
     localStorage.setItem("countForTallyCounter", counter);
     count.innerText = counter;
