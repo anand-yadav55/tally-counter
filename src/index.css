@@ -36,7 +36,7 @@ header {
   width: fit-content;
   margin: auto;
   height: 50vh;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .add {
