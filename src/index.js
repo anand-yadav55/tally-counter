@@ -12,6 +12,9 @@ if (typeof Storage !== "undefined") {
   count.innerText = counter;
   tallyMaker(counter);
 
+  function scrollToBottom(container) {
+    container.scrollTop = container.scrollHeight;
+  }
   function tallyMaker(counter) {
     let noOfCircles = counter / 5;
     let noOfLines = counter % 5;
@@ -23,6 +26,7 @@ if (typeof Storage !== "undefined") {
     for (let i = 1; i <= noOfLines; ++i) {
       tally.innerText += "|";
     }
+    scrollToBottom(tally);
   }
 
   addButton.addEventListener("click", () => {
