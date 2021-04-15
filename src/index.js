@@ -1,6 +1,9 @@
 const count = document.getElementsByClassName("count")[0];
 const tally = document.getElementsByClassName("tally")[0];
 const addButton = document.getElementsByClassName("add")[0];
+const subtractButton = document.getElementsByClassName("subtract")[0];
+const resetButton = document.getElementsByClassName("reset")[0];
+
 let counter = 0;
 if (typeof Storage !== "undefined") {
   if (!localStorage.getItem("countForTallyCounter")) {
@@ -31,6 +34,22 @@ if (typeof Storage !== "undefined") {
 
   addButton.addEventListener("click", () => {
     counter += 1;
+    localStorage.setItem("countForTallyCounter", counter);
+    count.innerText = counter;
+    tallyMaker(counter);
+  });
+  subtractButton.addEventListener("click", () => {
+    if (counter <= 0) {
+      alert("cannot go less than 0");
+      return;
+    }
+    counter -= 1;
+    localStorage.setItem("countForTallyCounter", counter);
+    count.innerText = counter;
+    tallyMaker(counter);
+  });
+  resetButton.addEventListener("click", () => {
+    counter = 0;
     localStorage.setItem("countForTallyCounter", counter);
     count.innerText = counter;
     tallyMaker(counter);

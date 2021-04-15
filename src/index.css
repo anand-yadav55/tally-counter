@@ -5,13 +5,18 @@
   overflow-wrap: break-word;
   line-height: 3rem;
 }
+body {
+  background-color: aliceblue;
+}
 .container {
   margin: auto;
   margin-top: 10vh;
   width: 75vw;
+  max-width: 700px;
   height: 80vh;
-  box-shadow: 0 0 5vh pink;
+  padding-top: 2.5rem;
   align-items: center;
+  background-color: antiquewhite;
 }
 header {
   font-size: xx-large;
@@ -22,6 +27,7 @@ header {
   margin: auto;
   width: fit-content;
   font-size: larger;
+  font-weight: bold;
 }
 .count {
   font-size: larger;
@@ -30,6 +36,7 @@ header {
 }
 .tally {
   font-size: large;
+  font-weight: 900;
   letter-spacing: 1rem;
   max-width: 70%;
   min-width: 30%;
@@ -38,17 +45,23 @@ header {
   height: 50vh;
   overflow-y: auto;
 }
-
-.add {
+button {
   border: 0.01rem solid rgb(26, 143, 79);
   border-radius: 2rem;
   padding: 0.4rem 1rem;
-  background-color: rgb(120, 179, 255);
+  background-color: rgb(20, 179, 55);
   margin: auto;
-  display: block;
+  justify-content: space-around;
+  display: inline;
   box-shadow: 2px 2px 1px black;
   line-height: normal;
+  outline: 0;
 }
-.add:active {
+button:active {
   box-shadow: none;
+  background-color: rgb(48, 77, 54);
+}
+.controlButtons {
+  justify-content: space-between;
+  display: flex;
 }
